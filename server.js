@@ -1,10 +1,8 @@
 const express = require("express")
-const {createServer} = require("node:http")
 const {join} = require("node:path")
 const socketio = require("socket.io")
 
 const app = express();
-// const server = createServer(app);
 
 app.use(express.static(join(__dirname, "/public")))
 
